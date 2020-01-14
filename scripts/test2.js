@@ -1,0 +1,15 @@
+"use strict";
+
+let a = Number(null);
+document.write("<p>" + a + "</p>");
+document.write("<p>" + Boolean(null) + "</p>");
+
+let b = "5" - "2";
+let a1 = null;
+let a2 = null;
+a1 = a2 = b;
+let a3 = 2 ** 3;
+let n = 2;
+n *= 8;
+n = 1 >>> 2;
+document.write("<p>" + +"" + "</p>");
