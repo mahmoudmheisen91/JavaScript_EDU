@@ -26,4 +26,4 @@ document.write("<p>" + (false == "false") + "</p>");
 //   alert(0);
 // }
 
-alert(1 || 0);
+alert(9 == "9");
