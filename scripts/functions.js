@@ -15,11 +15,18 @@ function add(a, b) {
 // add(2);
 
 function min(a, b) {
-  return a < b ? a : b;
+  return a <= b ? a : b;
 }
 
 // alert(min(3, 0));
 // alert(pow(4, 5));
+/**
+ * Returns x raised to the n-th power.
+ *
+ * @param {number} x The number to raise.
+ * @param {number} n The power, must be a natural number.
+ * @return {number} x raised to the n-th power.
+ */
 function pow(x, n) {
   return x ** n;
 }
