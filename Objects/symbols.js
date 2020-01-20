@@ -97,3 +97,18 @@ a4.a(); // a now has a name property
 a4.b(); // a now has an age property
 
 console.log(calculator); //{a: ƒ, b: ƒ, name: "cat", age: 5}
+
+let user33 = {
+  name: "John",
+  money: 1000,
+
+  [Symbol.toPrimitive](hint) {
+    alert(`hint: ${hint}`);
+    return hint == "string" ? `{name: "${this.name}"}` : this.money;
+  }
+};
+
+// conversions demo:
+alert(user33); // hint: string -> {name: "John"}
+alert(+user33); // hint: number -> 1000
+alert(user33 + 500); // hint: default -> 1500
