@@ -12,3 +12,4 @@ const isPrime = (x) =>
 
 console.log([...Array(9)]);
 console.log(isPrime(27));
+console.log(isPrime(7));
